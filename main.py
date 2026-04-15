@@ -3,8 +3,8 @@ from pydantic import BaseModel
 import pickle
 from preprocess import clean_text
 app = FastAPI()
-Mod_path="/home/bhuvaneshwaran/Documents/Documents/DataScience/DS CLASS/NLP/Log_Reg_Sentimentmodel.pkl"
-Vec_path="/home/bhuvaneshwaran/Documents/Documents/DataScience/DS CLASS/NLP/Log_Reg_Sentimentvect.pkl"
+Mod_path="Log_Reg_Sentimentmodel.pkl"
+Vec_path="Log_Reg_Sentimentvect.pkl"
 # Load model+vectorizer
 model = pickle.load(open(Mod_path, "rb"))
 vectorizer = pickle.load(open(Vec_path, "rb"))
