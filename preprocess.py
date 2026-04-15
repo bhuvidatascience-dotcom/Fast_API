@@ -1,5 +1,7 @@
 import re
 import string
+import nltk
+nltk.download('stopwords')
 
 def clean_text(text):
     text = text.lower()
